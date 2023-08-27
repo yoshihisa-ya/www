@@ -1,0 +1,42 @@
+site_name: www.yamano.dev
+theme:
+  name: material
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  language: ja
+  icon:
+    logo: material/file-document-edit
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yoshihisa_ya
+    - icon: fontawesome/brands/github
+      link: https://github.com/yoshihisa-ya/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/yoshihisa.yamano
+copyright: Copyright &copy; 2023 Yoshihisa Yamano
+
+nav:
+  - Home: index.md
+  - Linux:
+    - linux/index.md
+    - Arch Linux:
+      - Install: linux/archlinux/install.md
+  - Blog: https://blog.yamano.dev/
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
